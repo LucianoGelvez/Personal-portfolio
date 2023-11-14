@@ -1,0 +1,90 @@
+.contact-contenedor {
+  display: flex;
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(175, 64, 255, 0.8), 0 0 20px rgba(66, 172, 243, 0.6);
+  margin: 20px 10px 15px 10px;
+  z-index: 1;
+  margin-top: 100px;
+  height: 100%;
+  width: 65vw;
+}
+.contact-contenedor .contact-contenedor_text {
+  padding: 2%;
+  width: 50%;
+}
+.contact-contenedor .contact-contenedor_text h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.contact-contenedor .contact-contenedor_text h2 span {
+  background: linear-gradient(0deg, rgb(77, 54, 208) 0%, rgb(132, 116, 254) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.contact-contenedor .contact-contenedor_text h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contact-contenedor .contact-contenedor_text p {
+  margin-bottom: 10px;
+}
+.contact-contenedor .contact-contenedor_text .i-am {
+  margin-bottom: 35px;
+}
+.contact-contenedor .contact-contenedor_text .contact-contenedor_text__icons {
+  display: flex;
+}
+.contact-contenedor .contact-contenedor_text .contact-contenedor_text__icons button {
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 2%;
+}
+.contact-contenedor .contact-contenedor_text .contact-contenedor_text__icons button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  animation: pulse512 2.5s infinite;
+}
+.contact-contenedor .contact-contenedor_text .contact-contenedor_text__icons button svg {
+  display: block;
+  fill: #F9F9F9;
+}
+.contact-contenedor .contact-contenedor_text .contact-contenedor_text__icons button img {
+  width: #F9F9F9;
+  width: 30px;
+}
+.contact-contenedor .contact-contenedor_form {
+  width: 100%;
+  padding: 2%;
+}
+
+@media (max-width: 1100px) {
+  .contact-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+  }
+  .contact-contenedor .contact-contenedor_text {
+    width: 90vw;
+  }
+  .contact-contenedor .contact-contenedor_form {
+    width: 95vw;
+  }
+}/*# sourceMappingURL=Contact.css.map */

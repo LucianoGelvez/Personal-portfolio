@@ -1,0 +1,156 @@
+.container-product {
+  display: flex;
+  justify-content: center;
+  height: -moz-max-content;
+  height: max-content;
+  width: 65vw;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.container-product .return {
+  align-self: flex-start;
+  transition: all 0.3 ease-out;
+}
+.container-product .return img {
+  width: 50px;
+}
+.container-product .return:hover {
+  transform: scale(1.08);
+}
+.container-product .container-product-detail .image-gallery .image-gallery-content,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left {
+  background-size: contain;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-slide-wrapper,
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-thumbnails-left,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-slide-wrapper,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-thumbnails-left {
+  height: 50vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-slide-wrapper .image-gallery-icon .image-gallery-svg,
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-thumbnails-left .image-gallery-icon .image-gallery-svg,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-slide-wrapper .image-gallery-icon .image-gallery-svg,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-thumbnails-left .image-gallery-icon .image-gallery-svg {
+  width: 30px;
+}
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-slide-wrapper .image-gallery-slides,
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-thumbnails-left .image-gallery-slides,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-slide-wrapper .image-gallery-slides,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-thumbnails-left .image-gallery-slides {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(175, 64, 255, 0.8), 0 0 20px rgba(66, 172, 243, 0.6);
+  height: 50vh;
+  margin: auto;
+}
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-slide-wrapper .image-gallery-slides .image-gallery-image,
+.container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-thumbnails-left .image-gallery-slides .image-gallery-image,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-slide-wrapper .image-gallery-slides .image-gallery-image,
+.container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-thumbnails-left .image-gallery-slides .image-gallery-image {
+  width: 100vw;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: -moz-max-content;
+  height: max-content;
+  background-size: cover;
+  height: 50vh;
+}
+@media (max-width: 600px) {
+  .container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-slide-wrapper .image-gallery-slides,
+  .container-product .container-product-detail .image-gallery .image-gallery-content .image-gallery-thumbnails-left .image-gallery-slides,
+  .container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-slide-wrapper .image-gallery-slides,
+  .container-product .container-product-detail .image-gallery .image-gallery-thumbnails-left .image-gallery-thumbnails-left .image-gallery-slides {
+    width: 90vw;
+  }
+}
+.container-product .container-product-detail .container-product-detail_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+  padding: 5%;
+}
+.container-product .container-product-detail .container-product-detail_info h1 {
+  font-size: 35px;
+  border-width: 50%;
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+  height: 80px;
+  padding: 10px;
+  width: 100%;
+  text-align: end;
+  border-top: 5px solid transparent;
+  -o-border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-image-slice: 1;
+}
+.container-product .container-product-detail .container-product-detail_info p {
+  font-size: 18px;
+}
+.container-product .container-product-detail .container-product-detail_info p a img {
+  margin: 10px;
+  width: 30px;
+}
+.container-product .container-product-technologies {
+  padding: 10px;
+  border-top: 5px solid transparent;
+  -o-border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container-product .container-product-technologies .container-product-technologies__h2 {
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.container-product .container-product-technologies .container-product-technologies__project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-product .container-product-technologies .container-product-technologies__project .container-product-technologies__project___card {
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-product .container-product-technologies .container-product-technologies__project .container-product-technologies__project___card img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 850px) {
+  .container-product {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=ProyectDetail.css.map */

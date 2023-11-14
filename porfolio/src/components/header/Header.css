@@ -1,0 +1,194 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6vh;
+  padding: 5px 10%;
+  transition: all 0.3s;
+  width: 85vw;
+}
+.header .logo {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  order: 3;
+  margin-left: auto;
+  width: 80px;
+}
+.header .nav-link {
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .nav-link li {
+  display: inline-block;
+  padding: 0 20px;
+  transition: all 0.3s;
+}
+.header .nav-link li .detailMenuSelection__title {
+  position: relative;
+  transition: background-image 0.3s ease;
+}
+.header .nav-link li .detailMenuSelection__title::before, .header .nav-link li .detailMenuSelection__title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  border-top: 5px solid transparent;
+  -o-border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-image-slice: 1;
+  transition: width 0.8s ease, background-image 0.8s ease;
+}
+.header .nav-link li .detailMenuSelection__title::before {
+  left: 0;
+}
+.header .nav-link li .detailMenuSelection__title::after {
+  right: 0;
+}
+.header .nav-link li .detailMenuSelection__title:hover::before, .header .nav-link li .detailMenuSelection__title:hover::after {
+  width: 100%;
+}
+.header .nav-link li .detailMenuSelection__title a {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header .nav-link li .detailMenuSelection__title a:hover {
+  background: linear-gradient(0deg, rgb(77, 54, 208) 0%, rgb(132, 116, 254) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header .nav-link li:hover {
+  transform: scale(1.1);
+}
+.header .btn {
+  color: #F9F9F9;
+}
+.header .btn button {
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px;
+  font-size: 18px;
+  color: white;
+}
+.header .btn button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  animation: pulse512 2.5s infinite;
+  transform: scale(1.1);
+}
+.header .btn button svg {
+  display: block;
+  fill: white;
+}
+.header .btn button img {
+  width: white;
+  width: 30px;
+}
+.header .menu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    height: 100%;
+  }
+  .header .logo {
+    align-self: flex-start;
+    margin-top: -20px;
+  }
+  .header .nav-link {
+    display: none;
+  }
+  .header .btn {
+    display: none;
+  }
+  .header a {
+    text-decoration: none;
+  }
+  .header .menu,
+  .header .close {
+    display: flex;
+    align-self: flex-start;
+    margin: 4px;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 60px;
+    padding: 5px;
+    text-decoration: none;
+    -moz-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .header .menu span,
+  .header .close span {
+    background-color: rgb(5, 6, 45);
+    padding: 8px 8px 12px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+  }
+  .header .overlay {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 80vh;
+    justify-content: center;
+    width: 80vw;
+  }
+  .header .overlay .overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+  .header .overlay .overlay-content a {
+    margin: 15px 0 15px 0;
+    font-size: 25px;
+  }
+  .header .overlay .overlay-content a:hover {
+    color: rgb(132, 116, 254);
+  }
+  .header .overlay .close {
+    position: relative;
+    top: -80px;
+    align-self: flex-end;
+  }
+}/*# sourceMappingURL=Header.css.map */

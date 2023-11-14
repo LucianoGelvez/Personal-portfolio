@@ -1,0 +1,110 @@
+@import "../../../utils/style/colors";
+
+.contact-contenedor {
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: $shadow-2;
+    margin: 20px 10px 15px 10px;
+    z-index: 1;
+    margin-top: 100px;
+    height: 100%;
+    width: 65vw;
+
+
+    .contact-contenedor_text {
+        padding: 2%;
+        width: 50%;
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+
+            span {
+                background: $gradient-2;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .i-am {
+            margin-bottom: 35px;
+        }
+
+        .contact-contenedor_text__icons {
+
+            display: flex;
+
+            button {
+                background-image: $gradient-1;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: $shadow-1;
+                box-sizing: border-box;
+                display: flex;
+
+                padding: 10px;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                cursor: pointer;
+                transition: all .3s;
+                margin: 2%;
+
+
+                &:hover {
+                    background-position: right center;
+                    background-size: 200% auto;
+                    -webkit-animation: pulse 2s infinite;
+                    animation: pulse512 2.5s infinite;
+                }
+
+                svg {
+                    display: block;
+                    fill: $white;
+                }
+
+                img {
+                    width: $white;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .contact-contenedor_form {
+        width: 100%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact-contenedor {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+
+        .contact-contenedor_text {
+            width: 90vw;
+        }
+
+        .contact-contenedor_form {
+            width: 95vw;
+        }
+    }
+}

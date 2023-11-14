@@ -1,0 +1,175 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+.about-me .about-me_myself {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+}
+.about-me .about-me_myself .about-me_myself_greeting {
+  font-size: 25px;
+}
+.about-me .about-me_myself h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.about-me .about-me_myself .about-me_myself_opucation {
+  font-size: 25px;
+  padding-bottom: 10%;
+}
+.about-me .about-me_contact {
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .about-me_contact button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #F9F9F9;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 160px;
+  padding: 8px;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 2%;
+}
+.about-me .about-me_contact button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  animation: pulse512 2.5s infinite;
+}
+.about-me .about-me_contact button:active, .about-me .about-me_contact button:hover {
+  outline: 0;
+}
+.about-me .about-me_contact button:active {
+  transform: scale(0.9);
+}
+.about-me .about-me_contact button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.about-me .about-me_contact button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 2.3s ease-in-out;
+}
+.about-me .about-me_contact button:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.3s linear;
+}
+.about-me .about-me_contact button:hover svg {
+  fill: #F9F9F9;
+}
+.about-me .about-me_contact button:hover span {
+  opacity: 0;
+  transition: 0.8s linear;
+}
+.about-me .about-me_contact button:active {
+  transform: scale(0.95);
+}
+.about-me .about-me_contact button .svg-wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+.about-me .about-me_contact button .svg-wrapper svg {
+  fill: #F9F9F9;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.about-me .about-me_contact button:hover span {
+  display: none;
+}
+.about-me .about-me_contact button:hover .svg-wrapper {
+  transform: scale(1.25);
+}
+.about-me .about-me_contact button:hover {
+  transform: scale(1.05);
+}
+.about-me .about-me_contact button:hover span {
+  background: none;
+}
+.about-me .about-me_description {
+  width: 65vw;
+  padding-top: 50px;
+}
+.about-me .about-me_description h2 {
+  text-align: center;
+}
+.about-me .about-me_description p {
+  font-size: 22px;
+  line-height: 35px;
+  text-align: start;
+}
+
+@media (max-width: 1100px) {
+  .about-me {
+    padding: 0;
+    width: 100vw;
+  }
+  .about-me .about-me_myself {
+    width: 95%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .about-me .about-me_myself h1 {
+    font-size: 45px;
+  }
+  .about-me .about-me_contact {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .about-me .about-me_contact button {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1100px) and (max-width: 700px) {
+  .about-me .about-me_contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .about-me .about-me_description {
+    margin: 10% 0% 10% 0%;
+    padding: 0;
+    width: 85%;
+  }
+  .about-me .about-me_description p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 480px) {
+  .about-me {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=AboutMe.css.map */

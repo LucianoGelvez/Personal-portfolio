@@ -1,0 +1,135 @@
+.form .form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 500px;
+}
+.form .form-container .form__group {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  background-color: rgba(62, 62, 63, 0.568627451);
+  padding: 20px;
+  border-radius: 10px;
+}
+.form .form-container .form__field {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form .form-container .form__field::-moz-placeholder {
+  color: transparent;
+}
+.form .form-container .form__field::placeholder {
+  color: transparent;
+}
+.form .form-container .form__field:-moz-placeholder-shown ~ .form__label {
+  font-size: 15px;
+  cursor: text;
+  top: 20px;
+  font-weight: 100;
+}
+.form .form-container .form__field:placeholder-shown ~ .form__label {
+  font-size: 15px;
+  cursor: text;
+  top: 20px;
+  font-weight: 100;
+}
+.form .form-container .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: white;
+  pointer-events: none;
+}
+.form .form-container .form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-image-slice: 1;
+}
+.form .form-container .form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  font-weight: 700;
+  background: linear-gradient(0deg, rgb(77, 54, 208) 0%, rgb(132, 116, 254) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.form .form-container .textarea {
+  height: 100px;
+  width: 60vw;
+  resize: none;
+}
+.form .form-container .submit {
+  display: flex;
+  align-self: center;
+}
+.form .form-container .submit button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #F9F9F9;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 180px;
+  padding: 10px;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+.form .form-container .submit button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  animation: pulse512 2.5s infinite;
+}
+.form .form-container .submit button:active,
+.form .form-container .submit button:hover {
+  outline: 0;
+}
+.form .form-container .submit button:active {
+  transform: scale(0.1);
+}
+.form .form-container .submit button:hover .svg-wrapper {
+  transform: scale(1.5);
+  transition: 0.4s linear;
+}
+.form .form-container .submit button:hover .svg-wrapper {
+  transform: scale(1.08);
+}
+.form .form-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}/*# sourceMappingURL=Form.css.map */

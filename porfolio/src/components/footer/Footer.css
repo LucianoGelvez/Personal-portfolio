@@ -1,0 +1,20 @@
+.footer {
+  width: 65vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(13, 219, 219, 0);
+  border-top: 4px solid transparent;
+  -o-border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+     border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-image-slice: 1;
+  padding: 10px;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    width: 90vw;
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Footer.css.map */

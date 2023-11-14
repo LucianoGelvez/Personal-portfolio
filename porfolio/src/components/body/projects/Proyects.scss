@@ -1,0 +1,180 @@
+@import "../../../utils/style/colors";
+
+.proyect-container {
+    margin-top: 100px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .proyect-container_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 15px;
+        width: 65vw;
+
+
+        .card-product {
+            flex: 0 0 calc(33% - 20px);
+            position: relative;
+            margin: 20px 10px 15px 10px;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            align-items: flex-end;
+            background-position: -52px;
+
+            border-radius: 5px;
+            box-shadow: $shadow-2;
+
+            height: 350px;
+
+            .container-img {
+                padding-bottom: 80.25%;
+                overflow: hidden;
+                height: 20px;
+            }
+
+            .info-proyect {
+                padding: 10px;
+
+                .proyect-title {
+                    opacity: 0;
+                }
+
+                p {
+                    opacity: 0;
+                }
+
+                .ref {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.442);
+
+                    .proyect-title {
+                        opacity: 1;
+                        font-size: 16px;
+                        padding: 2px;
+                        color: white;
+                        font-weight: 700;
+
+                    }
+
+                    p {
+                        opacity: 1;
+                        color: white;
+                        height: auto;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-bottom: 20px;
+
+                    }
+
+                    .ref {
+                        opacity: 1;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: start;
+                        height: 5%;
+
+                        button {
+                            background-image: $gradient-1;
+                            border: 0;
+                            border-radius: 8px;
+                            box-shadow: $shadow-2;
+                            box-sizing: border-box;
+                            display: flex;
+
+                            padding: 7px;
+                            text-decoration: none;
+                            user-select: none;
+                            -webkit-user-select: none;
+                            touch-action: manipulation;
+                            white-space: nowrap;
+                            cursor: pointer;
+                            font-size: 12px;
+                            color: white;
+                            // transition: all .3s;
+
+                            &:hover {
+                                background-position: right center;
+                                background-size: 200% auto;
+                                -webkit-animation: pulse 2s infinite;
+                                animation: pulse512 2.5s infinite;
+
+                                transform: scale(1.05);
+                            }
+
+                            svg {
+                                display: block;
+                                fill: white;
+                            }
+
+                            img {
+                                width: white;
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .proyect-container {
+        margin-top: 10%;
+        justify-content: center;
+
+        .proyect-container_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95vw;
+
+            .card-product {
+                flex: 0 0 calc(50% - 20px);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                background-position: 0px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .proyect-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0s;
+        flex-direction: column;
+        margin-top: 80px;
+
+        .proyect-container_list {
+            .card-product {
+                flex: 0 0 calc(100% - 20px);
+                height: 300px;
+            }
+        }
+    }
+}

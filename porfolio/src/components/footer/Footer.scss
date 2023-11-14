@@ -1,0 +1,21 @@
+@import "../../utils/style/colors";
+
+.footer {
+    width: 65vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $special;
+    border-top: 4px solid transparent;
+    border-image: $gradient-1;
+    border-image-slice: 1;
+    padding: 10px;
+}
+
+@media (max-width: 1100px) {
+    .footer {
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+    }
+}
